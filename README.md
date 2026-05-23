@@ -18,8 +18,6 @@ The pipeline covers the full ML workflow: data loading, exploratory data analysi
 customer-personality-analysis/
 │
 ├── customer_personality_analysis.py   # Main script (full pipeline)
-├── cleaned_df.pkl                     # Serialized cleaned DataFrame
-├── train_test_data.pkl                # Serialized train/test splits
 └── README.md
 ```
  
@@ -110,7 +108,7 @@ After training, the following files are saved with `pickle`:
 | `cleaned_df.pkl` | Cleaned and feature-engineered DataFrame |
 | `train_test_data.pkl` | `X_train`, `X_test`, `y_train`, `y_test` splits |
  
-These can be loaded for downstream use or model serving without rerunning the pipeline.
+These are generated locally when you run the script and are **excluded from the repository**. To recreate them, simply run the script.
  
 ---
  
@@ -127,3 +125,4 @@ These can be loaded for downstream use or model serving without rerunning the pi
 ## 📝 License
  
 This project is for educational and portfolio purposes. Dataset credit goes to [imakash3011 on Kaggle](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis).
+ 
